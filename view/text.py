@@ -18,12 +18,16 @@ open_successful = 'Телефонная книга успешно открыта
 input_new_contact = 'Введите данные нового контакта'
 new_contact = ['Введите имя контакта: ', 'Введите телефон: ', 'Введите коммент: ']
 search_word = 'Введите искомый элемент: '
-# input_change_contact = 'Введите данные нового контакта'
 input_index = 'Введите индекс изменяемого контакта: '
 input_change_contact = 'Введите данные изменяемого контакта или Enter? чтоб оставить без изменений: '
+input_del_contact = 'Введите индекс контакта для удаления или 0 для отмены '
+
 
 def contact_saved(name: str):
     return f'Контакт {name} успешно сохранен'
 
 def contact_changed(name: str):
     return f'Контакт {name} успешно изменен'
+
+def dell_contact(name: str):
+    return f'Контакт {name} успешно удалён'
